@@ -10,7 +10,6 @@ import random
 import signal
 import sys
 import requests
-import json
 import os
 from pathlib import Path
 
