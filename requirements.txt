@@ -19,3 +19,6 @@ webdriver-manager>=3.8.0
 
 # Optional: Fake User-Agent for better stealth
 fake-useragent>=1.1.0
+
+# System Information Script Dependencies
+psutil>=5.9.0  # System and process utilities
