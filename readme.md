@@ -1,8 +1,120 @@
-# URL Opener with IP Rotation through Tor
+# Automation Scripts Collection
 
-🚀 **Automated URL opener that opens 5 links, rotates IP address through Tor network, and repeats the cycle until stopped.**
+🚀 **A collection of powerful automation scripts for various tasks including URL opening with IP rotation, system information gathering, network scanning, and GitHub profile statistics.**
 
 ## 📋 Table of Contents
+
+- [Scripts Overview](#scripts-overview)
+- [GitHub Profile Statistics](#github-profile-statistics) ⭐ NEW
+- [URL Opener with IP Rotation](#url-opener-with-ip-rotation)
+- [System Information Tool](#system-information-tool)
+- [Network Scanner](#network-scanner)
+- [Installation Guide](#installation-guide)
+- [Files Included](#files-included)
+
+---
+
+## 🎯 Scripts Overview
+
+### 1. GitHub Profile Statistics ⭐ NEW
+Comprehensive GitHub profile analyzer that fetches and displays detailed statistics for any public GitHub profile.
+
+**Quick Start:**
+```bash
+python github_stats.py username
+```
+
+**Features:**
+- ✅ Complete profile information (followers, repos, gists)
+- ✅ Repository statistics (stars, forks, watchers)
+- ✅ Programming language analysis with percentages
+- ✅ Top repositories by stars and forks
+- ✅ License and topics distribution
+- ✅ JSON export functionality
+- ✅ GitHub API rate limit monitoring
+
+📖 **[Full Documentation](github_stats_README.md)** | 🚀 **[Quick Start Guide](GITHUB_STATS_QUICKSTART.md)**
+
+---
+
+### 2. URL Opener with IP Rotation
+Automated URL opener that opens links, rotates IP address through Tor network, and repeats the cycle.
+
+**Features:**
+- ✅ Opens customizable URLs per cycle
+- 🔄 Routes traffic through Tor for IP rotation
+- 🌐 Works with Chrome browser via Selenium
+- 🛑 Graceful shutdown with Ctrl+C
+
+---
+
+### 3. System Information Tool
+Comprehensive system information gathering script.
+
+---
+
+### 4. Network Scanner
+Network scanning automation using nmap.
+
+---
+
+## 📦 GitHub Profile Statistics
+
+### Installation
+
+```bash
+# Install dependencies
+pip install requests
+
+# Or use the project requirements
+pip install -r requirements.txt
+```
+
+### Basic Usage
+
+```bash
+# Analyze any GitHub profile
+python github_stats.py torvalds
+
+# With GitHub token (recommended for higher rate limits)
+export GITHUB_TOKEN=your_token_here
+python github_stats.py username
+
+# Export to JSON
+python github_stats.py username --export
+```
+
+### Example Output
+
+```
+👤 GITHUB PROFILE: @torvalds
+======================================================================
+
+📋 Basic Information:
+   Name: Linus Torvalds
+   Followers: 185,234
+   Public Repos: 6
+
+📊 Overall Stats:
+   Total Stars Received: ⭐ 175,432
+   Total Forks: 🍴 51,234
+
+🔤 PROGRAMMING LANGUAGES
+   1. C                     ████████████████████████████████ 85.34%
+   2. Assembly              ████                              8.23%
+```
+
+### Files
+- `github_stats.py` - Main script
+- `github_stats_README.md` - Complete documentation
+- `GITHUB_STATS_QUICKSTART.md` - Quick start guide
+- `github_stats_example.py` - Usage examples
+
+---
+
+## 🌐 URL Opener with IP Rotation
+
+### Table of Contents
 
 - [Features](#features)
 - [Prerequisites](#prerequisites)
@@ -13,7 +125,6 @@
 - [Configuration](#configuration)
 - [Usage](#usage)
 - [Troubleshooting](#troubleshooting)
-- [Files Included](#files-included)
 
 ## 🎯 Features
 
